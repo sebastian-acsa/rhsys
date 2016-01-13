@@ -1,0 +1,14 @@
+<?php ob_start() ?>
+<style type="text/css">
+body{
+  background-color: #000; /*Default bg, similar to the background's base color*/
+  background-image: url("/img/rh_logo_index.png");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+    
+</style> 
+
+ <?php $contenido = ob_get_clean() ?>
+
+ <?php include 'layout.php' ?>
